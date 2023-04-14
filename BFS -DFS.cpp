@@ -27,7 +27,7 @@ void mainTest()
 int main()
 {
 	int t = 1;
-	// cin >> t;
+	// cin >> t;  
 	while (t--)
 		mainTest();
 	return 0;
