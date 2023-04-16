@@ -1,15 +1,15 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+
+//from my understanding, this is a function that returns true if something is a prime number
 bool isPrime1(int n)
 {
-	if (n == 2)
-		return true;
-	if (n % 2 == 0)
+
+	if (n != 2 && n % 2 == 0 || n % 3 == 0 || n % 5 == 0 || n % 7 == 0)
+		//this is worth testing because I did not test it, but it takes less lines of code and uses 'and' and 'or' functions
+		//it will return true if n is 2
 		return false;
-	for (int i = 2; i <= n - 1; i++)
-		if (n % i == 0)
-			return false;
 	return true;
 }
 
